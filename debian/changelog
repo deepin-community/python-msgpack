@@ -1,3 +1,16 @@
+python-msgpack (1.0.3-2) unstable; urgency=medium
+
+  * Add Use-PyFloat_Pack8-on-Python-3.11a7-499.patch (Closes: #1024314).
+  * Add autopkgtest.
+
+ -- Thomas Goirand <zigo@debian.org>  Sun, 20 Nov 2022 17:38:00 +0100
+
+python-msgpack (1.0.3-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Thomas Goirand <zigo@debian.org>  Thu, 17 Feb 2022 10:25:56 +0100
+
 python-msgpack (1.0.2-2) unstable; urgency=medium
 
   * Upload to unstable.

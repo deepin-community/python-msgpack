@@ -4,3 +4,8 @@ Depends:
  python3-msgpack,
 Restrictions: allow-stderr, superficial
 Features: test-name=python3
+
+Tests: unittests
+Depends:
+ @builddeps@,
+Restrictions: allow-stderr
