@@ -88,7 +88,7 @@ else:
     macros = [("__LITTLE_ENDIAN__", "1")]
 
 ext_modules = []
-if not PYPY and not PY2:
+if not PYPY and not PY2 and not os.environ.get("MSGPACK_PUREPYTHON"):
     ext_modules.append(
         Extension(
             "msgpack._cmsgpack",
@@ -125,14 +125,12 @@ setup(
     },
     license="Apache 2.0",
     classifiers=[
-        "Programming Language :: Python :: 2",
-        "Programming Language :: Python :: 2.7",
         "Programming Language :: Python :: 3",
-        "Programming Language :: Python :: 3.5",
         "Programming Language :: Python :: 3.6",
         "Programming Language :: Python :: 3.7",
         "Programming Language :: Python :: 3.8",
         "Programming Language :: Python :: 3.9",
+        "Programming Language :: Python :: 3.10",
         "Programming Language :: Python :: Implementation :: CPython",
         "Programming Language :: Python :: Implementation :: PyPy",
         "Intended Audience :: Developers",
